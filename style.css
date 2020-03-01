@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Helvetica;
+    font-family: spartan;
     color: white;
-    background-color: #353535;
 }
-.nav-container{
+/* .nav-container{
     float: left;
     width: 5%;
     height: 100%;
@@ -18,15 +17,7 @@ body{
     top: 0;
     left: 0;
 }
-.main-body{
-    float: left;
-    width: 95%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    text-align: center;
-    right: 0;
-}
+
 .nav-container ul{
     list-style: none;
     transform: translateY(50%);
@@ -38,22 +29,91 @@ body{
 }
 .nav-container ul li{
     margin-top: 30px;
-}
-header img{
-    width: 100%;
-
+} */
+header{
+    background: linear-gradient(rgb(0, 0, 0.8), rgb(0, 0, 0, 0.8)), url("/assets/bkh12.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+    position: relative;
 }
 h1{
-    background-color: #297fb9;
-    width: 98%;
-    margin: 40 auto 0 auto;
-    padding: 20px 0;
-    color: #cfcfcf;
-    text-align: center;
+    margin: 0;
+    font-family: spartan;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
+h3{
+    margin: 0;
+    font-family: spartan;
+    font-weight: 200;
+    font-size: 15px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2{
+    margin: 0;
+    font-family: spartan;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: black;
+}
+.text-box a{
+    text-decoration: none;
+    border: 1px solid white;
+    font-family: spartan;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    color: #E3436D;
+    letter-spacing: 0px;
+    transition:  all 0.4s;
+}
+.text-box a:hover{
+    border-color: #E3436D;
+    letter-spacing: 0px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+span{
+    color: #E3436D;
+}
+.section-a{
+    background-color: white;
+    position: relative;
+    padding: 70px 70px 100px 70px;
+    text-align: center;
+    color: black;
+    
+}
+.section-a h1, .section-b h1{
+    margin: 0;
+    font-family: spartan;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: black;
+}
+.section-a h1:after , .section-b h1:after{
+    content: " ";
+    display: block;
+    height: 2px;
+    background-color: #E3436D;
+    width: 100px;
+    margin: 10px auto;
+}
+
 .slider{
     position: relative;
-    text-align: center;
+    margin-top: 60px;
+    overflow: hidden;
 }
 .slider #bck{
     position: absolute;
@@ -62,6 +122,8 @@ h1{
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 50px;
+    background-color: transparent;
+    transition: all 0.5s;
 }
 .slider #fwd{
     position: absolute;
@@ -70,33 +132,81 @@ h1{
     transform: translateY(-50%);
     cursor: pointer;
     font-size: 50px;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+.pop-up{
+    position: absolute;
+    bottom: -70px;
+    left: 70px;
+    text-align: left;
+    transition: bottom 0.5s;
+}
+.pop-up h2{
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0;
+}
+.slider:hover img{
+    opacity: 0.4;
+    cursor: pointer;
+}
+.slider:hover .pop-up{
+    position: absolute;
+    bottom: 10px;
+}
+img{
+    transition: opacity 0.5s;
+}
+#fwd:hover, #bck:hover{
+    background-color: #bebebe;
+    border-radius: 50%;
 }
 
-#slide-image{
-    animation-name: fade;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-/* @keyframes fade{
-    
-} */
-
-section{
+.section-b{
+    background-color: #dddddde3;
+    padding: 60px 70px 20px 70px;
+    text-align: center;
     color: black;
+}
+.section-b p{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+.section-b h3{
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: 10px;
+    margin-top: 40px;
+}
+li{
+    text-align: left;
+    font-weight: 200;
+    margin: 0 auto;
+}
+
+.section-c{
     width: 80%;
-    margin: 70px auto;
+    margin: 50px auto;
+    text-align: center;
 }
-h2{
-    border-bottom: 2px solid orange;
-    margin-bottom: 15px;
-    padding-bottom: 7px;
+.col{
+    background-color: #E3436D;
+    transition: all 0.5s;
+    padding: 40px;
+    border-radius: 10px;
+    cursor: pointer;
 }
-h3{
-    margin-bottom: 20px;
+.section-c p{
+    margin-top: 20px;
 }
-.resume-part{
-    margin: 30px 0 40px 0;
+.col:hover {
+    transform: translate(1.5);
 }
+
 input,button{
     display: block;
 }
