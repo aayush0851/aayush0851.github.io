@@ -1,28 +1,44 @@
 <html>
     <head>
         <title></title>
+        <meta name="viewport" content="width=device-initial-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,400,500&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/assets/normalise.css">
         <link rel="stylesheet" type="text/css" href="/assets/grid.css">
         <link rel="stylesheet" type="text/css" href="/style.css">
-        
+        <link rel="stylesheet" type="text/css" href="/queries.css">
     </head>
     <body>
         
         <div class="main-container">
             
-            <!-- <div class="nav-container">
+            <!-- <div class="toggle-bar">
                 <ul>
-                    <li><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
-                    <li><a href="#"><ion-icon name="home-outline"></ion-icon></a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">INSIGHT</a></li>
+                    <li><a href="#">QUALIFICATIONS</a></li>
+                    <li><a href="#">PROJECTS</a></li>
+                    <li><a href="#">WRITE ME</a></li>
+                    <li><a href="#">CONTACT</a></li>
                 </ul>
             </div> -->
+            
                 <header>
+                    <nav>
+                        <div class="ham">
+                            <ion-icon name="reorder-three-outline"></ion-icon>
+                        </div>
+                        <ul class="nav-ul">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">INSIGHT</a></li>
+                            <li><a href="#">QUALIFICATIONS</a></li>
+                            <li><a href="#">PROJECTS</a></li>
+                            <li><a href="#">WRITE ME</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
                     <div class="text-box">
-                        <h1>Hello, I'am <span>AAYUSH TYAGI</span></h1>
+                        <h1>Hello, I'am <br><span>AAYUSH TYAGI</span></h1>
                         <h1>I'm a full stack web developer.</h1>
                         <br>
                         <br>
@@ -32,9 +48,9 @@
                 <div class="section-a">
                     <h1>CATCH AN INSIGHT</h1>
                     <h3>A QUICK DIVE INTO MY WORKS</h3>
+                    <ion-icon id="bck" name="chevron-back-outline"></ion-icon>
+                    <ion-icon id="fwd" name="chevron-forward-outline"></ion-icon>
                     <div class="slider">
-                        <ion-icon id="bck" name="chevron-back-outline"></ion-icon>
-                        <ion-icon id="fwd" name="chevron-forward-outline"></ion-icon>
                         <img id="slide-image" src="/assets/slider/img1.jpg" alt="Slider Images">
                         <div class="pop-up">
                             <h2 id="change-text-1">VACANZA</h2>
@@ -62,7 +78,7 @@
                             <br>
                             A good grasp over the concepts of Javascript, thus having a strong hold over dynamic and responsive front end development.
                             <br>
-                            Crystal clear notions of Node.JS, Express.JS and NPM modules for server side development.
+                            Crystal clear notion of Node.JS, Express.JS and NPM modules for server side development.
                             <br>
                             Basic knowledge of C programming language.
                             <br>
@@ -76,72 +92,60 @@
                 </div>            
 
 
-                <div class="section-c">
-                    <div class="row">
+                <div class="section-c section">
+                    <h1>MY PROJECTS</h1>
+                    <div class="row row-a">
                         <div class="col span-1-of-3">
                             <h2>VACANZA</h2>
-                            <p>link to them</p>
-                        </div>
-                        <div class="col span-1-of-3">
-                            <h2>OAK</h2>
-                            <p>link to them</p>
+                            <p>A dummy website with average level CSS implementation (Desktop Site)</p>
                         </div>
                         <div class="col span-1-of-3">
                             <h2>ROLL-DA-DICE</h2>
-                            <p>link to them</p>
+                            <p>A game based on Javascript (Desktop Site)</p>
+                            
+                        </div>
+                        <div class="col span-1-of-3">
+                            <h2>OAK</h2>
+                            <p>A dummy website with high level of advnace CSS implementation (Desktop Site)</p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row row-b">
                         <div class="col span-1-of-3">
-                            <h2>Registration Form</h2>
-                            <p>link to them</p>
+                            <h2>REGISTRATION FORM</h2>
+                            <p>RESTful API to register students for an event front end is linked via view engine</p>
                         </div>
                         <div class="col span-1-of-3">
-                            <h2>Phone Directory</h2>
-                            
-                            <p>link to them</p>
+                            <h2>PHONE DIRECTORY</h2>
+                            <p>An app to manage your contacts (RESTful APIs)</p>
                         </div>
                         <div class="col span-1-of-3">
-                            <h2>Portfolio Website</h2>
-                            <p>link to them</p>
+                            <h2>PORTFOLIO</h2>
+                            <p>A fully responsive website integrated with a form submission api</p>
                         </div>
                     </div>
                 </div>
 
-                        <section>
-                            <form>
-                                <input type="email" placeholder="Your Email Id">
-                                <input type="textarea" placeholder="feedback">
-                                <button type="submit">SUBMIT</button>
-                            </form>
-                        </section>
-
+                <div class="section-d">
+                    <h1>WANNA TELL ME SOMETHING</h1>
+                    <form>
+                        <input type="email" placeholder="Your Email Id" required>
+                        <input type="textarea" placeholder="Your message here" required>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
                         <footer>
-                            <div class="quaote">quate here</div>
                             <div class="links">
                                 <ul>
-                                    <li>
-                                        <a href="#">a</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">a</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">a</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">a</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">a</a>
-                                    </li>
+                                    <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+                                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                    <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+                                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
                                 </ul>
                             </div>
-                            <div>
-                                copyright
-                            </div>
                         </footer>
-                    
+                        <div class="base">
+                            &copy; AAYUSH TYAGI
+                        </div>    
             
         </div>
         <script src="/script.js"></script>

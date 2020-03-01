@@ -1,0 +1,74 @@
+@media only screen and (max-width:353px){
+    .section-b{
+        padding: 60px 17px 20px 17px;
+    }
+    .section-a{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width:480px){
+    .section-c{
+        width: 70%;
+    }
+    .resp1{
+        font-size: 20px;
+    }
+    .section-d{
+        padding: 80px 60px 50px 60px;
+    }
+    input{
+        display: block;
+        margin: 20px 0;
+        padding: 10px 0;
+        width: 100%;
+    }
+    form{
+        width: 70%;
+        margin: 60px auto 0px auto;
+    }
+    .section-b{
+        padding: 60px 17px 20px 17px;
+    }
+    #fwd,#bck{
+        top: 69%;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .nav-ul{
+        display: none;
+    }
+    .pop-up #change-text-1{
+        font-size: 97%;
+    }
+    .pop-up #change-text-2{
+        font-size: 90%;
+    }
+    .col{
+        padding: 40px 10px;
+    }
+    .links a{
+        margin: 0 5px;
+    }
+}
+@media only screen and (max-width:1000px){
+    nav a{
+        margin: 0px;
+        padding: 10 7px;
+    }
+    .col h2{
+        font-size: 14px;
+    }
+    
+    .slider img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width:1200px){
+    footer{
+        height: 25%;
+    }
+}
