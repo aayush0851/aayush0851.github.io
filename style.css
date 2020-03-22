@@ -18,8 +18,8 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
-    background-color: #010102;
+    z-index: 8;
+    background-color: #010102f6;
     text-align: center;
     padding: 10px 10px;
 }
@@ -38,10 +38,12 @@ nav a{
     color: white; 
     padding: 10px;  
     margin: 0 5px;
-    transition: border-top 0.5s;
+    transition: all 0.2s;
 }
 nav a:hover{
-    border-top: 10px solid #E3436D;
+    padding: 10px 8px;
+    letter-spacing: 1.5;
+    color: #E3436D;
 }
 header{
     background: linear-gradient(rgb(0, 0, 0.8), rgb(0, 0, 0, 0.8)), url("/assets/bkh12.jpg");
@@ -80,15 +82,15 @@ h2{
     font-weight: 200;
     letter-spacing: 2px;
     padding: 10px 15px;
+    border-radius: 50px;
     color: #E3436D;
     letter-spacing: 0px;
     transition:  all 0.4s;
 }
 .text-box a:hover{
-    border-color: #E3436D;
-    letter-spacing: 0px;
-    border: 1px solid white;
-    border-radius: 50px;
+    border-color: white;
+    letter-spacing: 1px;
+
 }
 .text-box{
     position: absolute;
@@ -139,28 +141,31 @@ span{
 #bck{
     position: absolute;
     top: 60%;
-    left: 0%;
+    left: 6%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 50px;
+    font-size: 55px;
+    z-index: 5;
     background-color: transparent;
     transition: all 0.5s;
 }
 #fwd{
     position: absolute;
     top: 60%;
-    right: 0%;
+    right: 6%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 50px;
+    font-size: 55px;
+    z-index: 5;
     background-color: transparent;
     transition: all 0.5s;
 }
 .pop-up{
     position: absolute;
     bottom: -70px;
-    left: 1%;
-    text-align: left;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
     transition: bottom 0.5s;
 }
 .pop-up h2{
@@ -230,6 +235,9 @@ li{
     cursor: pointer;
     height: 30%;
 }
+.gitlink{
+    text-decoration: none;
+}
 .section-c p{
     margin-top: 20px;
     color: black;
@@ -237,8 +245,7 @@ li{
 .col:hover {
     transform: scale(1.2);
     background: linear-gradient(#fc5c65, rgba(0, 0, 0));
-    box-shadow: 10px 10px 20px #3a3636ee;
-    
+    box-shadow: 10px 10px 20px #3a3636ee;    
 }
 .col:hover h2:after{
     background-color: rgba(255, 255, 255, 0.274);
@@ -264,17 +271,21 @@ input{
     padding: 10px;
     width: 100%;
 }
-.section-d button{
+.section-d a{
     display: block;
     margin: 50px 0 20px 0;
     width: 50%;
+    transform: translateX(50%);
     padding: 10px 5px;
     border-radius: 7px;
     border: 1px solid transparent;
     cursor: pointer;
     transition: all 0.2s;
+    text-decoration: none;
+    background-color: white;
+    color: #232323;
 }
-.section-d button:hover{
+.section-d a:hover{
     border: 1px solid white;
     color: white;
     background-color: #232323;
@@ -319,4 +330,77 @@ footer h1{
     background-color: #232323;
     color: white;
     font-weight: 300;
+}
+#toggle-bar{
+    position: fixed;
+    top: 0;
+    left: -500;
+    width: 0%;
+    z-index: 10;
+    background: linear-gradient(rgba(20, 20, 20),rgba(20, 20, 20));
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    transition: all 0.5s;
+    
+}
+
+#toggle-bar ul{
+    list-style: none;
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+}
+#toggle-bar li a{
+    text-decoration: none;
+    font-weight: 200;
+    color: white;
+    transition: all 0.2s;
+}
+#toggle-bar h1{
+    color: #E3436D;
+    font-weight: 500;
+    margin-top: 20px;
+}
+#cross{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size:30;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+#cross:hover {
+    color:  #E3436D;
+}
+
+#toggle-bar li{
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+#toggle-bar li a:hover{
+    color: #E3436D;
+    transform: scale(1.1);
+    letter-spacing: 2;
+    
+}
+#hamburgerIcon{
+    color: white;
+    /* float: left; */
+    position: absolute;
+    top: 2px;
+    left: 25px;
+    font-size: 35px;
+    z-index: 9;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: none;
+}
+#hamburgerIcon:hover{
+    transform: scale(1.2) rotate(360deg);
+    color: #E3436D;
+}
+#eml{
+    cursor: pointer;
 }

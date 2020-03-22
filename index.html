@@ -3,55 +3,56 @@
         <title></title>
         <meta name="viewport" content="width=device-initial-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Spartan:100,200,400,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/assets/normalise.css">
-        <link rel="stylesheet" type="text/css" href="/assets/grid.css">
-        <link rel="stylesheet" type="text/css" href="/style.css">
-        <link rel="stylesheet" type="text/css" href="/queries.css">
+        <link rel="stylesheet" type="text/css" href="./assets/normalise.css">
+        <link rel="stylesheet" type="text/css" href="./assets/grid.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./queries.css">
+        <link rel="stylesheet" type="text/css" href="./assets/animate.css">
     </head>
     <body>
         
-        <div class="main-container">
-            
-            <!-- <div class="toggle-bar">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">INSIGHT</a></li>
-                    <li><a href="#">QUALIFICATIONS</a></li>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">WRITE ME</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div> -->
-            
+        
+        <div id="toggle-bar">
+            <ion-icon name="close-outline" id="cross"></ion-icon>
+            <h1>JUMP TO</h1>
+            <ul onclick="toggle()">
+                <li><a href="#part1">HOME</a></li>
+                <li><a href="#part2">INSIGHTS</a></li>
+                <li><a href="#part3" >QUALIFICATIONS</a></li>
+                <li><a href="#part4">PROJECTS</a></li>
+                <li><a href="#part6">WRITE TO ME</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-container" id="part1">
                 <header>
                     <nav>
-                        <!-- <div class="ham">
-                            <ion-icon name="reorder-three-outline"></ion-icon>
-                        </div> -->
+                        <div id="hamburgerIcon">
+                            <ion-icon name="menu-outline" id="menuIcon"></ion-icon>
+                        </div>
                         <ul class="nav-ul">
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">INSIGHT</a></li>
-                            <li><a href="#">QUALIFICATIONS</a></li>
-                            <li><a href="#">PROJECTS</a></li>
-                            <li><a href="#">WRITE ME</a></li>
-                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#part1">HOME</a></li>
+                            <li><a href="#part2">INSIGHTS</a></li>
+                            <li><a href="#part3">QUALIFICATIONS</a></li>
+                            <li><a href="#part4">PROJECTS</a></li>
+                            <li><a href="#part6">CONTACT</a></li>
                         </ul>
                     </nav>
                     <div class="text-box">
                         <h1>Hello, I'am <br><span>AAYUSH TYAGI</span></h1>
-                        <h1>I'm a full stack web developer.</h1>
+                        <h1>I'm a MERN stack web developer.</h1>
                         <br>
                         <br>
-                        <a href="#">View my website</a>
+                        <a href="#part2">View my website</a>
                     </div>
                 </header>            
-                <div class="section-a">
+                <div class="section-a" id="part2">
                     <h1>CATCH AN INSIGHT</h1>
                     <h3>A QUICK DIVE INTO MY WORKS</h3>
                     <ion-icon id="bck" name="chevron-back-outline"></ion-icon>
                     <ion-icon id="fwd" name="chevron-forward-outline"></ion-icon>
                     <div class="slider">
-                        <img id="slide-image" src="/assets/slider/img1.jpg" alt="Slider Images">
+                        <img id="slide-image" src="./assets/slider/img0.jpg" alt="Slider Images">
                         <div class="pop-up">
                             <h2 id="change-text-1">VACANZA</h2>
                             <p id="change-text-2">A basic HTML and CSS webpage</p>
@@ -59,14 +60,16 @@
                     </div>
                 </div>   
 
-                <div class="section-b">
+                <div class="section-b" id="part3">
                     <div class="resume-part">
                         <h1>QUALIFICATIONS</h1>
                         <h3>1. EDUCATIONAL</h3>
                         <p>
                             Passed high school in 2015 with 10 CGPA in CBSE board from Holy Cross Sr. Sec. School, Laksar, Uttarakhand.
                             <br>
+                            <br>
                             Passed Intermediate in 2017 with 95.40% (PCM) in CBSE Board from the above stated school.
+                            <br>
                             <br>
                             Pursuing B.Tech. in ECE from Ajay Kumar Garg Engineering College, Ghaziabad, (2nd Year) with an aggregate of 78.40%.
                         </p>
@@ -74,13 +77,20 @@
                     <div class="resume-part">
                         <h3>2. TECHNICAL</h3>
                         <p>
-                            A high knowledge of HTML, advanced CSS and Media Queries for client side development.
+                            High knowledge of HTML, advanced CSS and Media Queries for static and responsive web page development.
                             <br>
-                            A good grasp over the concepts of Javascript, thus having a strong hold over dynamic and responsive front end development.
+                            <br>
+                            A good grasp over the concepts of Javascript and Typescript, thus having a strong hold over dynamic and responsive front end development.
+                            <br>
                             <br>
                             Crystal clear notion of Node.JS, Express.JS and NPM modules for server side development.
                             <br>
-                            Basic knowledge of C programming language.
+                            <br>
+                            Good knowledge of ReactJS for lightening fast client side rendering.
+                            <br>
+                            <br>
+                            Mediocre hold over C programming language.
+                            <br>
                             <br>
                             Basic video-editing skills (Adobe After Effects).
                         </p>
@@ -92,54 +102,61 @@
                 </div>            
 
 
-                <div class="section-c section">
+                <div class="section-c section" id="part4">
                     <h1>MY PROJECTS</h1>
                     <div class="row row-a">
-                        <div class="col span-1-of-3">
-                            <h2>VACANZA</h2>
-                            <p>A dummy website with average level CSS implementation (Desktop Site)</p>
+                        <div class="col span-1-of-3"> 
+                            <a href="https://www.github.com/aayush0851/roll-da-dice" class="gitlink">
+                                <h2>ROLL-DA-DICE</h2>
+                                <p>A game based on Javascript (Desktop Site)</p>
+                            </a>
                         </div>
                         <div class="col span-1-of-3">
-                            <h2>ROLL-DA-DICE</h2>
-                            <p>A game based on Javascript (Desktop Site)</p>
-                            
+                            <a href="https://www.github.com/aayush0851/todoApp" class="gitlink">
+                                <h2>To-Do App</h2>
+                                <p>A single page To-Do App based in ReactJS</p>
+                            </a>
                         </div>
                         <div class="col span-1-of-3">
-                            <h2>OAK</h2>
-                            <p>A dummy website with high level of advnace CSS implementation (Desktop Site)</p>
+                            <a href="https://www.github.com/aayush0851/OAK-" class="gitlink">
+                                <h2>OAK</h2>
+                                <p>A dummy website with high level of advance CSS implementation (Desktop Site)</p>
+                            </a>
                         </div>
                     </div>
                     <div class="row row-b">
                         <div class="col span-1-of-3">
-                            <h2>REGISTRATION FORM</h2>
-                            <p>RESTful API to register students for an event front end is linked via view engine</p>
+                            <a href="https://www.github.com/aayush0851/Registration-Form" class="gitlink">
+                                <h2>REGISTRATION FORM</h2>
+                                <p>RESTful API to register students for an event front end is linked via view engine</p>
+                            </a>
                         </div>
                         <div class="col span-1-of-3">
-                            <h2>PHONE DIRECTORY</h2>
-                            <p>An app to manage your contacts (RESTful APIs)</p>
+                            <a href="https://www.github.com/aayush0851/phone-directory" class="gitlink">
+                                <h2>PHONE DIRECTORY</h2>
+                                <p>An app to manage your contacts (RESTful APIs)</p>
+                            </a>
                         </div>
                         <div class="col span-1-of-3">
-                            <h2>PORTFOLIO</h2>
-                            <p>A fully responsive website integrated with a form submission api</p>
+                            <a href="https://www.github.com/aayush0851/portfolio" class="gitlink">
+                                <h2>PORTFOLIO</h2>
+                                <p>A fully responsive website integrated with a form submission api</p>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="section-d">
+                <div class="section-d" id="part5">
                     <h1>WANNA TELL ME SOMETHING</h1>
-                    <form>
-                        <input type="email" placeholder="Your Email Id" required>
-                        <input type="textarea" placeholder="Your message here" required>
-                        <button type="submit">SUBMIT</button>
-                    </form>
+                    <a id="eml" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tyagiayush851@email.com">CONTACT!</a>
                 </div>
                         <footer>
-                            <div class="links">
+                            <div class="links" id="part6">
                                 <ul>
-                                    <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
-                                    <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                                    <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
-                                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                    <li><a href="https://www.github.com/aayush0851"><ion-icon name="logo-github"></ion-icon></a></li>
+                                    <li><a href="https://www.linkedin.com/in/aayush-tyagi-112794191/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                                    
+                                    <li><a href="https://www.instagram.com/aayush0851"><ion-icon name="logo-instagram"></ion-icon></a></li>
                                 </ul>
                             </div>
                         </footer>

@@ -34,12 +34,11 @@
         top: 69%;
         font-size: 30px;
     }
+    
+
 }
 
 @media only screen and (max-width:767px){
-    .nav-ul{
-        display: none;
-    }
     .pop-up #change-text-1{
         font-size: 97%;
     }
@@ -51,6 +50,20 @@
     }
     .links a{
         margin: 0 5px;
+    }
+    #hamburgerIcon{
+        display: block;
+        top: 7px;
+    }
+    .nav-ul{
+        display: none;
+    }
+    .toggle-bar{
+        display: block;
+    }
+    nav{
+        height: 50px;
+        background-color: black;
     }
 }
 @media only screen and (max-width:1000px){
@@ -66,6 +79,7 @@
         width: 100%;
         height: auto;
     }
+    
 }
 @media only screen and (max-width:1200px){
     footer{
