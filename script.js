@@ -1,8 +1,8 @@
 var x=0;
-var arrayHead = ['Vacanza', 'Roll-da-dice', 'To-do App', 'Portfolio'];
-var arrayDes =['A basic HTML and CSS Webpage', 'A game based on Javascript', 'ReactJS based TO-DO App', ''];
+var arrayHead = ['Vacanza', 'Roll-da-dice', 'To-do App', 'Portfolio', 'OAK'];
+var arrayDes =['A basic HTML and CSS Webpage', 'A game based on Javascript', 'ReactJS based TO-DO App', 'Resume Page', 'HTML, CSS and Javascript based Webpage'];
 var slide_left_fwd = function(){
-    if(x>=2){
+    if(x>=4){
         x=0;
         document.getElementById('slide-image').src="/assets/slider/img"+x+".jpg";
         document.getElementById('change-text-1').innerHTML=arrayHead[x];
@@ -17,7 +17,7 @@ var slide_left_fwd = function(){
 };
 var slide_right_bck = function(){
     if(x<=0){
-        x=2;
+        x=4;
         document.getElementById('slide-image').src="/assets/slider/img"+x+".jpg";
         document.getElementById('change-text-1').innerHTML=arrayHead[x];
         document.getElementById('change-text-2').innerHTML=arrayDes[x];

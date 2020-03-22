@@ -89,14 +89,23 @@ h2{
 }
 .text-box a:hover{
     border-color: white;
-    letter-spacing: 1px;
-
+    letter-spacing: 1.5px;
+}
+.text-box img{
+    width: 170px;
+    border-radius: 50%;
+    border: 2px solid white;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 .text-box{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    display: flex;
+    flex-wrap: wrap;
 }
 span{
     color: #E3436D;
@@ -141,24 +150,28 @@ span{
 #bck{
     position: absolute;
     top: 60%;
-    left: 6%;
+    left: 5%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 55px;
+    font-size: 50px;
     z-index: 5;
     background-color: transparent;
     transition: all 0.5s;
+    background-color: #bebebe;
+    border-radius: 50%;
 }
 #fwd{
     position: absolute;
     top: 60%;
-    right: 6%;
+    right: 5%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 55px;
+    font-size: 50px;
     z-index: 5;
     background-color: transparent;
     transition: all 0.5s;
+    background-color: #bebebe;
+    border-radius: 50%;
 }
 .pop-up{
     position: absolute;
@@ -179,7 +192,7 @@ span{
     letter-spacing: 0;
 }
 .slider:hover img{
-    opacity: 0.4;
+    opacity: 0.2;
     cursor: pointer;
 }
 .slider:hover .pop-up{
@@ -190,8 +203,7 @@ img{
     transition: opacity 0.5s;
 }
 #fwd:hover, #bck:hover{
-    background-color: #bebebe;
-    border-radius: 50%;
+    color: #E3436D;
 }
 
 .section-b{
@@ -309,7 +321,7 @@ footer ul a{
     margin: 0 20px;
 }
 footer ul li{
-float: left;
+    float: left;
 }
 footer h1{
     font-weight: 500;
@@ -387,7 +399,6 @@ footer h1{
 }
 #hamburgerIcon{
     color: white;
-    /* float: left; */
     position: absolute;
     top: 2px;
     left: 25px;
